@@ -15,7 +15,7 @@ After migration, verify with::
     import yaml, pathlib
     data = yaml.safe_load(pathlib.Path('exports/lead_enrichment_agent/agent.yaml').read_text())
     graph, goal = load_agent_config(data)
-    print(f'OK: {len(graph.nodes)} nodes, {len(graph.edges)} edges')
+    logger.info(f'OK: {len(graph.nodes)} nodes, {len(graph.edges)} edges')
     "
 """
 

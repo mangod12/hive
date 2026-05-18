@@ -12,8 +12,8 @@ Typical usage — **config-driven** (runner passes configuration)::
     )
     mgr = SkillsManager(config)
     mgr.load()
-    print(mgr.protocols_prompt)       # default skill protocols
-    print(mgr.skills_catalog_prompt)  # community skills XML
+    logger.info(mgr.protocols_prompt)       # default skill protocols
+    logger.info(mgr.skills_catalog_prompt)  # community skills XML
 
 Typical usage — **bare** (exported agents, SDK users)::
 

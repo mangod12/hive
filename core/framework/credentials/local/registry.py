@@ -17,11 +17,11 @@ Usage:
 
     # Add a new account
     info, health = registry.save_account("brave_search", "work", "BSA-xxx")
-    print(info.status, info.identity.label)
+    logger.info(info.status, info.identity.label)
 
     # List all accounts
     for account in registry.list_accounts():
-        print(f"{account.credential_id}/{account.alias}: {account.status}")
+        logger.info(f"{account.credential_id}/{account.alias}: {account.status}")
 
     # Get the raw API key for a specific account
     key = registry.get_key("github", "personal")
